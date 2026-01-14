@@ -9,17 +9,19 @@ class Solution {
 
 public:
     bool isValid(string s) {
-        int left =0;
-        int right = s.length()-1;
-        while (left < right) {
-            if (s[left] != s[right]) {
-                return false;
-            }
-            left++;
-            right--;
+        stack<char> st;
 
+        for (char c:s) {
+            if (c ==  '(' || c== '[' || c == '{') {
+                st.push(c);
+            }
+            else {
+               if (st.empty()) return false;
+
+                if ((c==')') &&  st.top() != '(') ||
+            }
         }
-        return  true;
+    return st.empty();
     }
 };
 
