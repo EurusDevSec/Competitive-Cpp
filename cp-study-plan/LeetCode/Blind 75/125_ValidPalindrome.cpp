@@ -8,25 +8,25 @@ using namespace std;
 
 class  Solution {
 public:
-    bool isPalindrome(string s) {
-
-    string fw = remove_non_alpha(s);
-    string bw = fw;
-        reverse(bw.begin(),bw.end());
-        return fw == bw ;
-
-
-    }
-    string remove_non_alpha(string s) {
-
-        string t = "";
-        for (char c : s) {
-            if (std::isalnum(c)) {
-                t+=std::tolower(c);
-            }
-        }
-        return t;
-    }
+    // bool isPalindrome(string s) {
+    //
+    // string fw = remove_non_alpha(s);
+    // string bw = fw;
+    //     reverse(bw.begin(),bw.end());
+    //     return fw == bw ;
+    //
+    //
+    // }
+    // string remove_non_alpha(string s) {
+    //
+    //     string t = "";
+    //     for (char c : s) {
+    //         if (std::isalnum(c)) {
+    //             t+=std::tolower(c);
+    //         }
+    //     }
+    //     return t;
+    // }
 };
 
 
