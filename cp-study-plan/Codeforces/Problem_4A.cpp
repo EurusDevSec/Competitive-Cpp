@@ -2,8 +2,8 @@
 // Created by ACER on 13/01/2026.
 //
 
-#include<iostream>
-using namespace  std;
+#include <iostream>
+using namespace std;
 
 int main() {
     int n;

@@ -28,13 +28,39 @@ public:
     //     return t;
     // }
 
+    // method 2:
+    bool isPalindrome(string s) {
+      string t = "";
+        for (char c: s) {
+            if (std::isalnum(c)) {
+
+
+                t+=std::tolower(c);
+            }
+        }
+
+        int left = 0;
+        int right = t.length()-1;
+        while (left < right) {
+            if (t[left] != t[right]) return  false;
+            else {
+                left ++;
+                right --;
+            }
+
+
+        }
+        return  true;
+    }
+
+
 };
 
 
 
 int main() {
     Solution solution;
-    string s = "0P";
+    string s = "A man, a plan, a canal: Panama";
     if (solution.isPalindrome(s)) {
         cout<<"true";
 
