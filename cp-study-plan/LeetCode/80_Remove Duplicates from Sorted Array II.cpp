@@ -24,6 +24,8 @@ public:
 };
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     Solution solution;
     vector<int>nums ={0,0,1,1,1,1,2,3,3};
     cout<<solution.removeDuplicates(nums);
