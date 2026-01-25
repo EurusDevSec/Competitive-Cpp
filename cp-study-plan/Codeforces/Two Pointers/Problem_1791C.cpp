@@ -21,6 +21,7 @@ int main() {
         int l = 0;
         int r = s.size()-1;
         int cnt =0;
+        // Two pointer technique
         while (l <= r) {
             if (s[l] != s[r]) {
                 l++;
